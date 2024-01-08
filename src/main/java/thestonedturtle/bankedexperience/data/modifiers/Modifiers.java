@@ -58,6 +58,10 @@ public final class Modifiers
 		Activity.INFERNAL_ASHES
 	);
 
+	static final Set<Activity> SHADES = ImmutableSet.of(
+		Activity.LOAR_REMAINS, Activity.PHRIN_REMAINS, Activity.RIYL_REMAINS, Activity.ASYN_REMAINS, Activity.FIYR_REMAINS, Activity.URIUM_REMAINS
+	);
+
 	public static void prepare(ItemManager manager)
 	{
 		assert modifiers.size() == 0;
@@ -118,6 +122,7 @@ public final class Modifiers
 				return super.compatibleWith(modifier);
 			}
 		});
+		addModifier(new StaticModifier(Skill.PRAYER, "Morytania Hard Diary (150% xp)", 1.5f, SHADES, null));
 
 		// Farming
 		addModifier(new SkillingOutfit(Skill.FARMING, "Farmer's Outfit", null, null,

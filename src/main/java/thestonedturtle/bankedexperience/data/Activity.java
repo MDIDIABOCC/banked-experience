@@ -422,6 +422,8 @@ public enum Activity
 		ExperienceItem.ASYN_REMAINS, null, null),
 	FIYR_REMAINS(ItemID.FIYR_REMAINS, "Fiyre remains", 1, 84.0,
 		ExperienceItem.FIYR_REMAINS, null, null),
+	URIUM_REMAINS(ItemID.URIUM_REMAINS, "Urium remains", 1, 120.5,
+		ExperienceItem.URIUM_REMAINS, null, null),
 	// Ensouled Heads
 	ENSOULED_GOBLIN_HEAD(ItemID.ENSOULED_GOBLIN_HEAD_13448, "Ensouled goblin head", 1, 130.0,
 		ExperienceItem.ENSOULED_GOBLIN_HEAD, Secondaries.BASIC_REANIMATION, null),
